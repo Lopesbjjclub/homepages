@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonatha Lopes</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background-color: #464242;
+            padding: 24px;
+        }
+
+        .container {
+            position: absolute;
+            height: 1000px;
+            width: 80%;
+            margin: 0 auto;
+            top: 10%;
+        }
+
+        .card {
+            position: relative;
+            border-radius: 12px;
+            padding: 32px;
+            margin-bottom: 24px;
+            min-height: 180px;
+            color: white;
+            cursor: pointer;
+            transition: transform 0.2s;
+            overflow: visible;
+        }
+
+        .card:hover {
+            transform: scale(1.02);
+        }
+
+        .card-content {
+            max-width: calc(100% - 200px);
+        }
+
+        .card-image {
+            position: absolute;
+            right: 24px;
+            top: -16px;
+            bottom: -16px;
+            width: 180px;
+        }
+
+        .card-image img {
+            position:absolute;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+            border-radius: 8px;
+            bottom: 10;
+        }
+
+        .icon-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            padding: 12px;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .new-badge {
+            background-color: #3b82f6;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin-left: 12px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .card-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 12px;
+        }
+
+        .card-description {
+            color: rgba(255, 255, 255, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .button {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: white;
+            border: none;
+            padding: 10px 24px;
+            border-radius: 24px;
+            cursor: pointer;
+            transition: background-color 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+
+        .button:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        /* Card Background Colors */
+        .bg-purple {
+            background-color: #0c0c0c;
+        }
+
+        .bg-pink {
+            background-color: #be185d;
+        }
+
+        .bg-dark {
+            background-color: #111827;
+        }
+
+        .bg-blue {
+            background-color: #1e40af;
+        }
+
+        .bg-green {
+            background-color: #065f46;
+        }
+        
+        .icon-container {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 16px;
+        }
+
+        .icon-container img {
+            width: 40px;
+            height: 40px;
+            border-radius:50%;
+            object-fit: contain;
+        }
+
+        .defesa{
+            position: absolute;
+            height: 5000px;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                position: absolute;
+                height: 80px;
+                width: 90%;
+                padding: 12px;
+            }
+
+            .card {
+                padding: 24px;
+                min-height: 180px;
+                position: relative;
+                overflow: hidden;
+            }
+
+            .card-content {
+                max-width: 60%;
+                z-index: 2;
+            }
+
+            .card-image {
+                position: absolute;
+                right: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                width: 40%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .card-image img {
+                position: absolute;
+                height: 350px;
+                width: 150px;
+                object-fit: contain;
+                right: 0;
+            }
+
+            .button {
+                margin-top: 20px;
+            }
+
+            .card-title {
+                font-size: 20px;
+            }
+
+            .card-description {
+                font-size: 14px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .card-content {
+                max-width: 55%;
+            }
+
+            .card-image {
+                width:45%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+
+</div>
+
+    <div class="container">
+        <!-- Card 1 -->
+        <div class="card bg-purple">
+            <div class="card-content">
+                
+                <span class="new-badge">New!</span>
+                <h2 class="card-title">Café da manhã com Jiu-Jitsu</h2>
+                <p class="card-description">Conheça o Jiu-Jitsu e o que ele pode fazer para melhorar sua vida.</p>
+                <a href="https://cafedamanhacomjiujitsujonathalopes.netlify.app/" class="button">Conheça o eBook</a>
+            </div>
+            <div class="card-image">
+                <img src="img/1b7e7a9e-f91b-4cea-8b0f-cda72a321180.png" alt="Instrutor">
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="card bg-pink">
+            <div class="card-content">
+                
+                <span class="new-badge">Destaque</span>
+                <h2 class="card-title">Guia de Defesa Pessoal</h2>
+                <p class="card-description">Aprenda técnicas essenciais de defesa pessoal para seu dia a dia.</p>
+                <a href="https://portfolio-dev-lopes.my.canva.site/dagc67oddsm" class="button">Saiba mais</a>
+            </div>
+            <div class="card-image">
+                <img class="defesa" src="img/6a48de99-2f5d-49ef-9b44-c31a98316453.png" alt="Defesa Pessoal">
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="card bg-dark">
+            <div class="card-content">
+                
+                <span class="new-badge">Popular</span>
+                <h2 class="card-title">Nutrição para Atletas</h2>
+                <p class="card-description">Descubra os segredos da alimentação ideal para praticantes de artes marciais.</p>
+                <a href="https://portfolio-dev-lopes.my.canva.site/dagc7twilkw" class="button">Ver mais</a>
+            </div>
+            <div class="card-image">
+                <img src="/img/44071513-8b40-46df-a300-57963a365244.png" alt="Nutrição">
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="card bg-blue">
+            <div class="card-content">
+                
+                <span class="new-badge">Exclusivo</span>
+                <h2 class="card-title">Meditação e Artes Marciais</h2>
+                <p class="card-description">Explore a conexão entre mente e corpo através das artes marciais.</p>
+                <a href="https://portfolio-dev-lopes.my.canva.site/dagc7p57coy" class="button">Explorar</a>
+            </div>
+            <div class="card-image">
+                <img src="img/d8d0deb3-2381-40d2-883d-3ce3d364f0fe.png" alt="Meditação">
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+<div class="card bg-green">
+    <div class="card-content">
+       
+        </div>
+        <span class="new-badge">Music Player</span>
+        <h2 class="card-title">Solte o Play</h2>
+        <p class="card-description">Conheça a música que te inspira!</p>
+        <audio src="audio/O Brazilian Jiu-Jitsu é mais do que uma .mp3" controls loop muted></audio>
+    </div>
+   
+</div>
+
+    </div>
+
+    
+
+        
+</body>
+</html>
